@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            sec{
+                height:500px;
+                width:250px;
+                background-color: white;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Day 3 Assignment</h1>
+        <input type="text" id="inp" placeholder="Enter Name"/>
+        <input type="text" id="inp1" placeholder="Enter City"/>
+        <button onclick="abc()">Add</button>
+        <div id="sec"></div>
+
+        <script>
+            function abc()
+            {
+                let name=document.querySelector("#inp").value;
+                let city=document.querySelector("#inp1").value;
+                document.querySelector("#sec").innerHTML=`<h1>${name}<br>${city}`;
+                
+            }
+
+            
+           
+        </script>
+    </body>
+</html>
